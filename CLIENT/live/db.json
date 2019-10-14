@@ -1,0 +1,51 @@
+{
+  "messages": [
+    {
+      "id": "pS8Qcfs_",
+      "text": "Welcome Vue-Apollo"
+    },
+    {
+      "id": "L1rE-8li",
+      "text": "REALTIME"
+    },
+    {
+      "id": "7XX9Y8Qp",
+      "text": "SEXY"
+    },
+    {
+      "id": "MIYH-ThD",
+      "text": "REALTIME"
+    },
+    {
+      "id": "O8mxD3Cl",
+      "text": "T_T"
+    },
+    {
+      "id": "VfmDvwDV",
+      "text": "'\"><i>xD</i>"
+    }
+  ],
+  "uploads": [
+    {
+      "id": "iq_Dengq",
+      "filename": "NO LOGO GABST 23.png",
+      "mimetype": "image/png",
+      "encoding": "7bit",
+      "path": "files/iq_Dengq-NO LOGO GABST 23.png"
+    },
+    {
+      "id": "OT9LrQIN",
+      "filename": "Screenshot from 2019-10-12 15-59-37.jpg",
+      "mimetype": "image/jpeg",
+      "encoding": "7bit",
+      "path": "files/OT9LrQIN-Screenshot from 2019-10-12 15-59-37.jpg"
+    },
+    {
+      "id": "aRtZZcLV",
+      "filename": "Nuxt.Js Notes.md",
+      "mimetype": "text/markdown",
+      "encoding": "7bit",
+      "path": "files/aRtZZcLV-Nuxt.Js Notes.md"
+    }
+  ]
+}

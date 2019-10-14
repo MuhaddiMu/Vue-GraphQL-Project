@@ -2,9 +2,9 @@ CLIENT/.DS_Store
 CLIENT/node_modules
 CLIENT/dist
 
-SERVER/.DS_Store
-SERVER/node_modules
-SERVER/dist
+#SERVER/.DS_Store
+#SERVER/node_modules
+#SERVER/dist
 
 # local env files
 .env.local

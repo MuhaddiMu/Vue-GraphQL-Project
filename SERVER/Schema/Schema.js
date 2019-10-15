@@ -68,6 +68,43 @@ const QueryRoot = new GraphQLObjectType({
     }
 })
 
+const Mutation = new GraphQLObjectType({
+    name: 'Mutation',
+    fields: {
+        CreateAuthor: {
+            type: TypeAuthor,
+            args: {
+                Name: {type: GraphQLString},
+                Age: {type: GraphQLInt}
+            },
+            resolve(parent, args){
+                let author = new Author({
+                    Name: args.Name,
+                    Age: args.Age
+                })
+                return author.save()
+            }
+        },
+        CreateBook: {
+            type: TypeBook,
+            args: {
+                Name: {type: GraphQLString},
+                Genre: {type: GraphQLString},
+                AuthorID: {type: GraphQLID}
+            },
+            resolve(parent, args){
+                let book = new Book({
+                    Name: args.Name,
+                    Genre: args.Genre,
+                    AuthorID: args.AuthorID
+                })
+                return book.save()
+            }
+        }
+    }
+})
+
 module.exports = new GraphQLSchema({
-    query: QueryRoot
+    query: QueryRoot,
+    mutation: Mutation
 })

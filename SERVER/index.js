@@ -5,13 +5,7 @@ const Mongoose = require('mongoose')
 
 const App = Express();
 
-const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://Muhaddis:Muhaddi@cluster0-dktnv.mongodb.net/test?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true });
-client.connect(err => {
-    console.log('Successfully Connected to Database')
-  //client.close();
-});
+Mongoose.connect('mongodb+srv://Muhaddis:Muhaddi@cluster0-dktnv.mongodb.net/test?retryWrites=true&w=majority', {useNewUrlParser: true})
 
 
 App.use('/graphiql', GraphqlHTTP({

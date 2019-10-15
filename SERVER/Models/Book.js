@@ -8,4 +8,4 @@ const BookSchema = new Schema({
     AuthorID: String //Relation
 })
 
-module.exports = Mongoose.Model('Book', BookSchema)
+module.exports = Mongoose.model('Book', BookSchema)

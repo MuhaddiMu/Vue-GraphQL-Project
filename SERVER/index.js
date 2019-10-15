@@ -10,7 +10,7 @@ const uri = "mongodb+srv://Muhaddis:Muhaddi@cluster0-dktnv.mongodb.net/test?retr
 const client = new MongoClient(uri, { useNewUrlParser: true });
 client.connect(err => {
     console.log('Successfully Connected to Database')
-  client.close();
+  //client.close();
 });
 
 

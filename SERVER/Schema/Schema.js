@@ -4,7 +4,7 @@ const Book = require('../Models/Book')
 const Author = require('../Models/Author')
 
 
-const {GraphQLObjectType, GraphQLString, GraphQLSchema, GraphQLID, GraphQLInt, GraphQLList} = GraphQL
+const {GraphQLObjectType, GraphQLString, GraphQLSchema, GraphQLID, GraphQLInt, GraphQLList, GraphQLNonNull} = GraphQL
 
 const TypeBook = new GraphQLObjectType({
     name: 'Book',
@@ -75,8 +75,8 @@ const Mutation = new GraphQLObjectType({
         CreateAuthor: {
             type: TypeAuthor,
             args: {
-                Name: {type: GraphQLString},
-                Age: {type: GraphQLInt}
+                Name: {type: new GraphQLNonNull(GraphQLString)},
+                Age: {type: new GraphQLNonNull(GraphQLInt)}
             },
             resolve(parent, args){
                 let author = new Author({
@@ -89,9 +89,9 @@ const Mutation = new GraphQLObjectType({
         CreateBook: {
             type: TypeBook,
             args: {
-                Name: {type: GraphQLString},
-                Genre: {type: GraphQLString},
-                AuthorID: {type: GraphQLID}
+                Name: {type: new GraphQLNonNull(GraphQLString)},
+                Genre: {type: new GraphQLNonNull(GraphQLString)},
+                AuthorID: {type: new GraphQLNonNull(GraphQLID)}
             },
             resolve(parent, args){
                 let book = new Book({

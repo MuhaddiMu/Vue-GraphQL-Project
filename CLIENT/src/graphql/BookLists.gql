@@ -1,0 +1,7 @@
+ {
+    Books {
+        Name
+        Genre
+        id
+    }
+}

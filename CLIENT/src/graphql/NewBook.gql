@@ -1,0 +1,5 @@
+mutation CreateBookOnDB($Title: String!, $Genre: String!, $AuthorID: ID!){
+  CreateBook(Name: $Title, Genre: $Genre, AuthorID: $AuthorID) {
+      Name
+  }
+}

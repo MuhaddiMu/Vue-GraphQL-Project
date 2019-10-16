@@ -1,0 +1,16 @@
+query($BookIDProp: ID){
+    Book(id: $BookIDProp){
+        id
+        Name
+        Genre
+        Author{
+            Name
+            Age
+            id
+            Books{
+                Name
+                id
+            }
+        }
+    }
+}

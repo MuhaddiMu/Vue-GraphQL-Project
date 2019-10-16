@@ -13,7 +13,6 @@
                 <li v-for="Book in data.Book.Author.Books" :key="Book.id">{{Book.Name}}</li>
             </ul>  
 
-
           </div>
 
           <!-- No result -->

@@ -8,7 +8,7 @@ const App = Express();
 
 App.use(CORS())
 
-Mongoose.connect('mongodb+srv://Muhaddis:Muhaddi@cluster0-dktnv.mongodb.net/test?retryWrites=true&w=majority', {useNewUrlParser: true})
+Mongoose.connect('MONGODB DATABASE CONNECTION STRING GOES HERE', {useNewUrlParser: true})
 
 
 App.use('/graphiql', GraphqlHTTP({
